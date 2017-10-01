@@ -1,0 +1,5 @@
+@include('universal.header.header_normal')
+@include('auth.delete.source.JsAndCss')
+@include('universal.top.layoutTop')
+@include('auth.delete.page.indexInc')
+@include('universal.footer.bottom')

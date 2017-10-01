@@ -1,0 +1,5 @@
+@include('universal.header.header_normal')
+@include('account.changePassword.source.JsAndCss')
+@include('universal.top.layoutTop')
+@include('account.changePassword.page.indexInc')
+@include('universal.footer.bottom')

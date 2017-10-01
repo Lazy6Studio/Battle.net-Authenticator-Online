@@ -1,0 +1,93 @@
+{
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "GPLv3",
+  "type": "project",
+  "require": {
+    "php": ">=5.6.4",
+    "gregwar/captcha": "1.*",
+    "laravel/framework": "5.4.*",
+    "laravel/tinker": "~1.0",
+    "laravelcollective/html": "5.4.*",
+    "predis/predis": "~1.0.1"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "~1.4",
+    "mockery/mockery": "0.9.*",
+    "barryvdh/laravel-ide-helper": "2.3.*",
+    "phpunit/phpunit": "~5.7"
+  },
+  "autoload": {
+    "classmap": [
+      "database"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "common/bean/AuthBean.php",
+      "common/bean/AuthSyncInfo.php",
+      "common/bean/AuthImageBean.php",
+      "common/bean/CookieValue.php",
+      "common/bean/CookieBean.php",
+      "common/bean/WechatTokenBean.php",
+      "common/constant/KeyConstant.php",
+      "common/constant/HttpFormConstant.php",
+      "common/utils/Functions.php",
+      "common/utils/CacheHelper.php",
+      "common/utils/CaptchaUtils.php",
+      "common/utils/DBHelper.php",
+      "common/utils/RedisHelper.php",
+      "common/utils/CookieHelper.php",
+      "common/model/DonateInfoListModel.php",
+      "common/class/Authenticator.php",
+      "common/utils/RegisterCheckUtils.php",
+      "common/utils/LoginCheckUtils.php",
+      "common/utils/ChangePasswordUtils.php",
+      "common/utils/MailCheckUtils.php",
+      "common/utils/ForgetPasswordCheckUtils.php",
+      "common/utils/FindPasswordMailCheckUtils.php",
+      "common/utils/ResetPasswordUtils.php",
+      "common/utils/MailSendUtils.php",
+      "common/utils/ChangeEmailAddressUtils.php",
+      "common/utils/AuthUtils.php",
+      "common/utils/ResendVerifyEmailUtils.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "php artisan key:generate"
+    ],
+    "post-install-cmd": [
+      "Illuminate\\Foundation\\ComposerScripts::postInstall",
+      "php artisan optimize"
+    ],
+    "post-update-cmd": [
+      "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+      "php artisan optimize"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}

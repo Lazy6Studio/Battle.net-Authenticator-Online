@@ -1,0 +1,5 @@
+@include('universal.header.header_normal')
+@include('auth.myAuthList.source.JsAndCss')
+@include('universal.top.layoutTop')
+@include('auth.myAuthList.page.indexInc')
+@include('universal.footer.bottom')

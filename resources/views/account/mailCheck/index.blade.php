@@ -1,0 +1,6 @@
+@include('universal.header.header_normal')
+@include('account.mailCheck.source.JsAndCss')
+@include('universal.top.layoutTop')
+@include('account.mailCheck.source.JsJump')
+@include('account.mailCheck.page.indexInc')
+@include('universal.footer.bottom')

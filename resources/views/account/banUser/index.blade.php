@@ -1,0 +1,5 @@
+@include('universal.header.header_normal')
+@include('account.banUser.source.JsAndCss')
+@include('universal.top.layoutTop')
+@include('account.banUser.page.indexInc')
+@include('universal.footer.bottom')

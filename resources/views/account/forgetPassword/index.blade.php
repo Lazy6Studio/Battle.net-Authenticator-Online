@@ -1,0 +1,5 @@
+@include('universal.header.header_normal')
+@include('account.forgetPassword.source.JsAndCss')
+@include('universal.top.layoutTop')
+@include('account.forgetPassword.page.indexInc')
+@include('universal.footer.bottom')

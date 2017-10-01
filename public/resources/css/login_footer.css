@@ -1,0 +1,8 @@
+/* Document:footer 登录页面版 Created on:2013-6-11,20:30:55 Author:Ann Description:Purpose of the stylesheet follows.*/
+
+#layout-bottom {
+    min-height: 1px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}

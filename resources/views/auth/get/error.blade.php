@@ -1,0 +1,5 @@
+@include('universal.header.header_normal')
+@include('auth.get.source.JsJump')
+@include('universal.top.layoutTop')
+@include('auth.get.page.errorInc')
+@include('universal.footer.bottom')

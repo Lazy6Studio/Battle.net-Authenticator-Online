@@ -1,0 +1,9 @@
+@include('universal.header.header_normal')
+@include('static.errors.source.Css')
+@include('universal.top.layoutTop',["topNavValueText"=>"","topLayoutId"=>'layout-top-nobackground'])
+@if(rand(0,1)==1)
+    @include('static.errors.page.error_1')
+@else
+    @include('static.errors.page.error_2')
+@endif
+@include('universal.footer.bottom')

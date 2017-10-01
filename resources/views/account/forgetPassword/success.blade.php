@@ -1,0 +1,5 @@
+@include('universal.header.header_normal')
+@include('account.forgetPassword.source.JsJump')
+@include('universal.top.layoutTop')
+@include('account.forgetPassword.page.successInc')
+@include('universal.footer.bottom')

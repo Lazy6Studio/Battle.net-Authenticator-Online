@@ -1,0 +1,5 @@
+@include('universal.header.header_normal')
+@include('static.errors.source.Css')
+@include('universal.top.layoutTop',['dbError'=>true,"topNavValueText"=>"","topLayoutId"=>'layout-top-nobackground'])
+@include('static.errors.page.db')
+@include('universal.footer.bottom',['dbError'=>true])
